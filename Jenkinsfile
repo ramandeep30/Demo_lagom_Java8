@@ -22,12 +22,6 @@ runMavenVerify(MAVEN_HOME)
 }
 echo 'Ending the script .....'
 }
-
-//Gatling Simulation script
-stage("Performance") {
-gatlingArchive()
-manager.addShortText("/home"
-}
 }
 
 private String runMavenVerify(MAVEN_HOME) {
@@ -45,4 +39,3 @@ private String runMavenVerify(MAVEN_HOME) {
          echo 'Maven Stage Passed.'
      }
  }
- 

@@ -24,6 +24,15 @@ echo 'Ending the script .....'
 }
 }
 
+private String getMicroserviceInformation() {
+    def pom = readMavenPom file: 'pom.xml'
+
+    String artifactId = pom.artifactId
+    String groupId = pom.groupId
+    String version = pom.version
+    return artifactId+":"+groupId+":"+version
+}
+
 private String runMavenVerify(MAVEN_HOME) {
  sh "ls -lrth ${MAVEN_HOME}"
 

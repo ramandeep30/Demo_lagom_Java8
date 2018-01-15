@@ -7,7 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import org.example.hello.api.GreetingMessage;
 import org.example.hello.api.HelloService;
 
 public class HelloServiceTest {

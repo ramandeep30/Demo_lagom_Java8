@@ -10,7 +10,6 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.example.stream.api.StreamService;
-import org.example.hello.api.GreetingMessage;
 import org.example.hello.api.HelloService;
 
 import java.net.URI;

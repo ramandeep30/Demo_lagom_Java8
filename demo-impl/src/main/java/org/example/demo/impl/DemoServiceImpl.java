@@ -3,10 +3,9 @@ package org.example.demo.impl;
 import akka.NotUsed;
 import akka.japi.Pair;
 import com.lightbend.lagom.javadsl.api.ServiceCall;
+import com.lightbend.lagom.javadsl.api.transport.ResponseHeader;
 import com.lightbend.lagom.javadsl.server.HeaderServiceCall;
 import org.example.demo.api.DemoService;
-import play.mvc.ResponseHeader;
-
 import javax.inject.Inject;
 import java.util.concurrent.CompletableFuture;
 
@@ -37,8 +36,7 @@ public class DemoServiceImpl implements DemoService{
         return (requestHeader, request) -> {
             Pair<String, String> result = Pair.create(id, name);
             //return CompletableFuture.completedFuture(Pair.create(requestHeader,"ghyhg"));
-
-        return  CompletableFuture.completedFuture()
+            return  CompletableFuture.completedFuture(Pair.create(ResponseHeader.OK, "welcome"));
         };
     }
 }

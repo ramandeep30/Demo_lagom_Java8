@@ -12,7 +12,7 @@
     <modules>
         <module>hello-api</module>
         <module>hello-impl</module>
-        <module>integration-tests</module>
+       <!-- <module>integration-tests</module>-->
         <module>demo-api</module>
         <module>demo-impl</module>
     </modules>

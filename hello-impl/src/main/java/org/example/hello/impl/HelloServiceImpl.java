@@ -14,7 +14,7 @@ public class HelloServiceImpl implements HelloService {
   @Override
   public ServiceCall<NotUsed, String> hello(String id) {
     return request -> {
-      return CompletableFuture.completedFuture("Ayush");
+      return CompletableFuture.completedFuture("HELLO "+id);
     };
   }
 }

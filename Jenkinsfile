@@ -4,7 +4,7 @@ stage('Initialization') {
 }
   
 stage('Maven') {
-withEnv(["PATH+MAVEN=${tool 'm3'}/bin"]) {
+withEnv(["PATH+MAVEN=${tool 'M3'}/bin"]) {
     sh "mvn clean verify"
 }
 }

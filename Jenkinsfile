@@ -8,3 +8,4 @@ withEnv(["PATH+MAVEN=${tool 'm3'}/bin"]) {
     sh "mvn clean verify"
 }
 }
+}
